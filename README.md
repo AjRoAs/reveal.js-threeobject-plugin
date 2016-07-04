@@ -23,3 +23,25 @@ the object to ad to the scene have to be "commented" inside a `<!--code` `code--
 ```
 you can replace `data-background-3d` for `data-3d` for render inside a div.
 the boolean can be replaced for the path of a `.stl` file.
+
+
+how to load:
+
+```javascript
+<script>
+    Reveal.initialize({
+
+        // ... add your settings here ...
+
+        // Optional reveal.js plugins
+        dependencies: [
+            // other dependencies ...
+
+            // add THIS dependency for threeobject plugin
+            { src: 'plugin/threeobject/threeobject.js', async: true }
+
+        ]
+    });
+
+</script>
+```
