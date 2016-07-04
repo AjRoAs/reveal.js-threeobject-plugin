@@ -26,9 +26,9 @@ function loadScript(url, callback) {
   if (typeof window.addEventListener === 'function') {
     var gl_node = document.querySelectorAll('section');
 
-    loadScript("plugin/treeobject/build/three.min.js", function() {
-      loadScript("plugin/treeobject/js/loaders/STLLoader.js", function() {
-        loadScript("plugin/treeobject/js/Detector.js", function() {
+    loadScript("plugin/threeobject/build/three.min.js", function() {
+      loadScript("plugin/threeobject/js/loaders/STLLoader.js", function() {
+        loadScript("plugin/threeobject/js/Detector.js", function() {
 
           var scenes = [];
 
